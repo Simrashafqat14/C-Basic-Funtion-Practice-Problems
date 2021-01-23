@@ -1,0 +1,16 @@
+             /*
+             Write a program, which 
+                ==> inputs a whole number (which is >0)
+                ==> calculates the numbers of digits in a number
+                ==> outputs the number of digits and the original number
+             */
+  Console.Write("Enter a whole number greater than 0 : ");
+  int Number=Convert.ToInt32(Console.ReadLine());
+  int i = 0;
+  while (Number > 0)
+  {
+    i++;
+    Number=Number/10;
+  }
+  Console.WriteLine("Number of digits are " + i);
+       
